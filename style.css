@@ -1,0 +1,23 @@
+body{
+    background-color: #051D3B
+}
+
+.cabeçalho{
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* colocar hover pra mobile? */
+.cabeçalho__botao-pesquisa:hover{
+    background: rgba(80, 129, 251, 0.08);
+    border-style: solid;
+    border-radius:35%;
+}
+.cabeçalho__botao-menu:hover{
+    background: rgba(80, 129, 251, 0.08);
+    border-style: solid;
+    border-radius:35%;
+}
+
+
