@@ -2,6 +2,9 @@ body{
     background-color: #051D3B
 }
 
+
+/* header */
+
 .cabeçalho{
     padding: 1rem 1rem 0 1rem;
     display: flex;
@@ -19,5 +22,90 @@ body{
     border-style: solid;
     border-radius:35%;
 }
+
+/* editor de código */
+
+.editor{
+    display: flex;
+    justify-content: center;
+}
+.editor__caixa-colorida{
+    width: 100%;
+    height: 30.75rem;
+    margin: 2.5rem 1rem 0 1rem;
+    background-color: #6BD1FF;
+    border-style: solid;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.editor__caixa-codigo{
+    width: 100%;
+    height: 24.75rem;
+    margin: 2rem 2rem 2rem 2rem;
+    background-color: #141414;
+    border-style: solid;
+    border-radius: 8px;
+    padding: 1rem;
+}
+.editor__bolinhas{
+    display: flex;
+}
+.editor__bolinha-vermelha{
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #FF5F56;
+    border-style: solid;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.editor__bolinha-amarela{
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #FFBD2E;
+    border-style: solid;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.editor__bolinha-verde{
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #27C93F;
+    border-style: solid;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.editor__input-codigo{
+    padding-top: 1.5rem;
+    display: flex;
+}
+.editor__input-codigo textarea{
+    background-color: #141414;
+    width: 100%;
+    height: 22.2rem;
+    border-style: none;
+    resize: none;
+
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
