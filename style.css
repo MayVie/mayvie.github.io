@@ -120,7 +120,7 @@ main{
 
 .editor__botao-highlight{
     width: 100%;
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 0rem 1rem;
     padding: 1rem;
     background: rgba(80, 129, 251, 0.08);
 
@@ -129,7 +129,8 @@ main{
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 1);
+    ;
 
     border-style: none;
     border-radius: 8px;
@@ -147,10 +148,78 @@ main{
 
 
 
+.form-projeto{
+    display: flex;
+    flex-direction: column;   
+}
+.form-projeto__seu-projeto{
+    display: flex;
+    flex-direction: column;
+}
+.form-projeto__titulo-bloco{
+    padding: 2.5rem 1rem 0 1rem;
+    
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.4em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+.form-projeto__titulo-projeto{
+    margin: 1rem 1rem 0 1rem;
+    height: 1.5rem;
+    padding: 1rem;
+    border-style: none;
+    background: rgba(255, 255, 255, 0.16);
+        
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.64);
+}
+.form-projeto__descriçao-projeto{
+    margin: 1rem 1rem 0 1rem;
+    height: 3rem;
+    padding: 1rem;
+    border-style: none;
+    background: rgba(255, 255, 255, 0.16);
+}
 
+.form-projeto__personalizaçao{
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-projeto__linguagem{
+    margin: 1rem 1rem 0 1rem;
+    width: 100%;
+    height: 3.5rem;
+    padding-left: 1rem;    
+    border-style: none;
+    background: rgba(255, 255, 255, 0.16);
+}
+.form-projeto__cor{
+    margin: 1rem 1rem 0 1rem;
+    width: 100%;
+    height: 3.5rem;
+    
+}
+.form-projeto__botao-salvar{
+    margin: 2rem 1rem 2.5rem 1rem;
+    padding: 1rem;
+    background: rgba(80, 129, 251, 0.08);
 
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
 
-
+    border-style: none;
+    border-radius: 8px;
+}
 
 
 
