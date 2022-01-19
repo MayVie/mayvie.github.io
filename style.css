@@ -25,7 +25,7 @@ body{
 .cabeçalho__botao-menu:hover{
     background: rgba(80, 129, 251, 0.08);
     border-style: solid;
-    border-radius:35%;
+    border-radius: 35%;
 }
 .cabeçalho__botao-menu:active{
     background: rgba(80, 129, 251, 0.16);
@@ -297,8 +297,16 @@ main{
 .editor__input-codigo__comunidade{
     padding-top: .75rem;
 }
-.editor__input-codigo__comunidade textarea{
+.editor__input-codigo__comunidade p{
     height: 19.125rem;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+
+    overflow: hidden; 
     
 }
 
@@ -318,8 +326,7 @@ main{
 }
 .editor__card-content{
     margin: 0 1.5rem;
-    width: 100%;
-    padding: 1.5rem 0 2rem 0;
+    padding: 1.5rem 0 1.5rem 0;
 }
 .editor__card-content h2{
     padding-bottom: .5rem;
@@ -333,7 +340,9 @@ main{
     text-align: left;
 
 }
+
 .editor__card-actions{
+    
     margin: 0 1.5rem;
     padding-bottom: 1.5rem;
     
@@ -341,13 +350,47 @@ main{
     flex-direction: row;
     justify-content: space-between;
 }
+
+
 .editor__card-actions-icons{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+.editor__card-actions-comment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .5rem 0;
+}
+.editor__card-actions-comment:hover{
+    background: rgba(255, 255, 255, 0.08);
+    border-style: solid;
+    border-radius: 1rem;   
+}
+.editor__card-actions-comment:active{
+    background: rgba(255, 255, 255, 0.16);
+    border-style: solid;
+    border-radius: 1rem;   
+}
+.editor__card-actions-fav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .5rem 0;
+}
+.editor__card-actions-fav:hover{
+    background: rgba(255, 255, 255, 0.08);
+    border-style: solid;
+    border-radius: 1rem; 
+}
+.editor__card-actions-fav:active{
+    background: rgba(255, 255, 255, 0.16);
+    border-style: solid;
+    border-radius: 1rem; 
+}
 .editor__card-actions-icons img{
-    padding: 0 .5rem;
+    padding: 0 .5rem;  
 }
 .editor__card-actions-icons p{
     padding-right: .5rem;
@@ -357,6 +400,12 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 0.75rem;
+}
+.editor__card-actions-autor:hover{
+    background: rgba(255, 255, 255, 0.08);
+    border-style: solid;
+    border-radius: .5rem;
 }
 .editor__card-actions-autor p{
     padding-left: .5rem;
