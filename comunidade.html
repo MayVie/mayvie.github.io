@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Code Editor</title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/dracula.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/cabecalho.css"> 
+    <link rel="stylesheet" href="./css/editor.css"> 
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,65 +18,105 @@
 </head>
 
 <body>
-    <header class="cabeçalho">
-        <img class="cabeçalho__logo-aluradev" src="imagens-header/logo-aluradev.png" alt="Logo escrito alura dev">
-        <div class="cabeçalho__menu-direito">
-            <a href="#">
-                <img class="cabeçalho__botao-pesquisa" src="imagens-header\Lupa-pesquisa\lupa pesquisa.png" alt="ícone em forma de lupa para pesquisa">
+    <header class="cabecalho">
+        <img class="cabecalho__logo" src="./img/imagens-header/logo-aluradev.png" alt="Logo escrito alura dev">
+        <div class="cabecalho__box-pesquisa-menu">
+            <a href="#" >
+                <div class="cabecalho__box-icone">
+                    <img  src="./img/imagens-header/icon-lupa.png" alt="ícone em forma de lupa para pesquisa">
+                </div>
             </a>
-            <a href="#">
-                <img class="cabeçalho__botao-menu" src="imagens-header\Menu-hamburguer\Menu hamburguer.png" alt="icone de menu">
+            <a href="#" data-icone-menu>
+                <div class="cabecalho__box-icone">
+                    <img  src="./img/imagens-header/icon-menuHamburguerMobile.png" alt="icone de menu" >
+
+                </div>
             </a>
+            
+            <div class="cabecalho__menu" data-div-menu>
+                <nav>
+                    <ul>
+                        <li class="cabecalho__menu-item">
+                            <a href="/index.html" class="cabecalho__menu-link">
+                                <div class="cabecalho__menu-box-icon">
+                                    <img src="./img/imagens-header/Icon-menu-editor.png" alt="ícone editor" >
+                                </div>
+                                Editor de código
+                            </a>
+                        </li>
+
+                        <li class="cabecalho__menu-item">
+                            <a href="/comunidade.html" class="cabecalho__menu-link">
+                                <div class="cabecalho__menu-box-icon cabecalho__menu-box-icon-ativo">
+                                    <img src="./img/imagens-header/Icon-menu-comunidade.png" alt="ícone comunidade" >
+                                </div>
+                                Comunidade
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="cabecalho__menu-linha">
+                    </div>
+                    <div class="cabecalho__menu-perfil">
+                        <a href="#" class="cabecalho__menu-link">
+                            <img src="./img/imagens-header/Photo-perfil-menu.png" alt="imagem de perfil do usuário" class="cabecalho__menu-img-perfil">
+                            Harry
+                        </a>
+                    </div>
+                </nav>
+            </div>
            
         </div> 
     </header>
     
-    <main>
-
-        <a href="#" class="editor editor__comunidade">
-            <div class="editor__caixa-colorida  editor__caixa-colorida__comunidade">
-                <div class="editor__caixa-codigo  editor__caixa-codigo__comunidade">
-                    <div class="editor__bolinhas">
-                        <div class="editor__bolinha-vermelha"></div>
-                        <div class="editor__bolinha-amarela"></div>
-                        <div class="editor__bolinha-verde"></div>
-                    </div>
-                    <div class="editor__input-codigo editor__input-codigo__comunidade">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar metus eu congue faucibus. Nullam tincidunt viverra diam, at blandit lacus rutrum quis. Donec tincidunt dui ut gravida placerat. Cras id ultricies erat, sit amet ultricies velit. Duis feugiat purus eget lorem aliquet ultrices. Phasellus blandit convallis aliquet. Quisque ac metus vel nisi eleifend aliquam.
-                        Suspendisse ut est vel orci maximus ultricies id sed lacus. Vivamus auctor nulla vel tellus sagittis fermentum. Pellentesque ante felis, ultrices a arcu id, suscipit condimentum orci. Aliquam fermentum sollicitudin purus et interdum. Sed vulputate mattis lacus, eu facilisis tellus. Nulla vel lorem semper, varius urna id, blandit felis. Sed molestie diam molestie libero euismod pulvinar. Morbi eu tellus laoreet, imperdiet eros vel, blandit orci. Curabitur ultricies in velit sed luctus. Phasellus eget molestie lectus. Phasellus tempor ac libero at fermentum. Morbi fringilla egestas libero eget maximus.
-                        </p>
-                    </div>                   
-                </div>
-            </div>
-            
-            <div class="editor__card">
-                <div class="editor__card-content">
-                    <h2>Título do projeto</h2>
-                    <p>Essa é a descrição do meu projeto.</p>
-                </div>
-
-                <div class="editor__card-actions">
-                    <div class="editor__card-actions-icons">
-                        <div class="editor__card-actions-comment">
-                            <img src="imagens-card/icon-comentario.png" alt="ícone comentário">
-                            <p>9</p>
+    
+    <main data-comunidade-card>
+        <section class="card">
+            <a href="#" class="editor editor--comunidade">
+                <div class="editor__caixa-colorida  editor__caixa-colorida--comunidade">
+                    <div class="editor__caixa-codigo  editor__caixa-codigo--comunidade">
+                        <div class="editor__bolinhas">
+                            <div class="editor__bolinha-vermelha"></div>
+                            <div class="editor__bolinha-amarela"></div>
+                            <div class="editor__bolinha-verde"></div>
                         </div>
-                        <div class="editor__card-actions-fav">
-                            <img src="imagens-card/icon-coraçao.png" alt="ícone coração">
-                            <p>9</p>
-                        </div>
-                    </div>
-                    <div class="editor__card-actions-autor">
-                       <img src="imagens-card/foto-autor.png" alt="foto do autor">
-                       <p>@Harry</p>
+                        <div class="editor__input-codigo editor__input-codigo--comunidade">
+                            <p></p>
+                        </div>                   
                     </div>
                 </div>
-            </div>
-        </a>
+                
+                <div class="editor__card">
+                    <div class="editor__card-content">
+                        <h2>Título do projeto</h2>
+                        <p>Essa é a descrição do meu projeto.</p>
+                    </div>
 
+                    <div class="editor__card-actions">
+                        <div class="editor__card-actions-icons">
+                            <div class="editor__card-actions-comment">
+                                <img src="imagens-card/icon-comentario.png" alt="ícone comentário">
+                                <p>9</p>
+                            </div>
+                            <div class="editor__card-actions-fav">
+                                <img src="imagens-card/icon-coraçao.png" alt="ícone coração">
+                                <p>9</p>
+                            </div>
+                        </div>
+                        <div class="editor__card-actions-autor">
+                        <img src="imagens-card/foto-autor.png" alt="foto do autor">
+                        <p>@Harry</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </section>
 
         
     </main>
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/salvarCodigo.js"></script>
 
 </body>
 </html>

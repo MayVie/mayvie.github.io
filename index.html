@@ -3,9 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>Alura Code Editor</title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/dracula.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/cabecalho.css"> 
+    <link rel="stylesheet" href="./css/editor.css"> 
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,15 +18,52 @@
 </head>
 
 <body>
-    <header class="cabeçalho">
-        <img class="cabeçalho__logo-aluradev" src="imagens-header/logo-aluradev.png" alt="Logo escrito alura dev">
-        <div class="cabeçalho__menu-direito">
-            <a href="#">
-                <img class="cabeçalho__botao-pesquisa" src="imagens-header\Lupa-pesquisa\lupa pesquisa.png" alt="ícone em forma de lupa para pesquisa">
+    <header class="cabecalho">
+        <img class="cabecalho__logo" src="./img/imagens-header/logo-aluradev.png" alt="Logo escrito alura dev">
+        <div class="cabecalho__box-pesquisa-menu">
+            <a href="#" >
+                <div class="cabecalho__box-icone">
+                    <img  src="./img/imagens-header/icon-lupa.png" alt="ícone em forma de lupa para pesquisa">
+                </div>
             </a>
-            <a href="#">
-                <img class="cabeçalho__botao-menu" src="imagens-header\Menu-hamburguer\Menu hamburguer.png" alt="icone de menu">
+            <a href="#" data-icone-menu>
+                <div class="cabecalho__box-icone">
+                    <img  src="./img/imagens-header/icon-menuHamburguerMobile.png" alt="icone de menu" >
+
+                </div>
             </a>
+            
+            <div class="cabecalho__menu" data-div-menu>
+                <nav>
+                    <ul>
+                        <li class="cabecalho__menu-item">
+                            <a href="/index.html" class="cabecalho__menu-link">
+                                <div class="cabecalho__menu-box-icon cabecalho__menu-box-icon-ativo">
+                                    <img src="./img/imagens-header/Icon-menu-editor.png" alt="ícone editor" >
+                                </div>
+                                Editor de código
+                            </a>
+                        </li>
+
+                        <li class="cabecalho__menu-item">
+                            <a href="/comunidade.html" class="cabecalho__menu-link">
+                                <div class="cabecalho__menu-box-icon">
+                                    <img src="./img/imagens-header/Icon-menu-comunidade.png" alt="ícone comunidade" >
+                                </div>
+                                Comunidade
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="cabecalho__menu-linha">
+                    </div>
+                    <div class="cabecalho__menu-perfil">
+                        <a href="#" class="cabecalho__menu-link">
+                            <img src="./img/imagens-header/Photo-perfil-menu.png" alt="imagem de perfil do usuário" class="cabecalho__menu-img-perfil">
+                            Harry
+                        </a>
+                    </div>
+                </nav>
+            </div>
            
         </div> 
     </header>
@@ -35,28 +77,28 @@
                         <div class="editor__bolinha-amarela"></div>
                         <div class="editor__bolinha-verde"></div>
                     </div>
-                    <div class="editor__input-codigo">
-                        <textarea name="textarea" spellcheck="false" placeholder="<seu código>"></textarea>
-                    </div>                   
+                    <div class="editor__input-codigo" data-caixa-codigo>
+                        <pre><code class="editor__code hljs" contenteditable="true" aria-label="editor de código" autofocus spellcheck="false"></code></pre>
+                    </div>                           
                 </div>
             </div>
-            <button name="highlight" class="editor__botao-highlight">Visualizar com o highlight</button>
+            <button name="highlight" class="editor__botao-highlight" data-botao-highlight>Visualizar com o highlight</button>
         </section>
 
         <section >
             <form action="" class="form-projeto">
                 <fieldset class="form-projeto__seu-projeto">
                     <legend class="form-projeto__titulo-bloco">SEU PROJETO</legend>
-                    <input type="text" name="título" id="titulo-projeto" placeholder="Nome do seu projeto" class="form-projeto__titulo-projeto">
-                    <input type="text" name="descrição" id="descriçao-projeto" placeholder="Descrição do seu projeto" class="form-projeto__descriçao-projeto" >
+                    <input type="text" name="título" id="titulo-projeto" placeholder="Nome do seu projeto" class="form-projeto__titulo-projeto" data-form-titulo>
+                    <input type="text" name="descrição" id="descriçao-projeto" placeholder="Descrição do seu projeto" class="form-projeto__descriçao-projeto" data-form-descricao>
                 </fieldset>
                 
                 <fieldset class="form-projeto__personalizaçao">
                     <legend class="form-projeto__titulo-bloco">PERSONALIZAÇÃO</legend>
-                    <select name="linguagem" id="linguagem-projeto" class="form-projeto__linguagem">
-                        <option value="JS" selected>JavaScript</option>
-                        <option value="HTML">HTML</option>
-                        <option value="CSS">CSS</option>
+                    <select name="linguagem" id="linguagem-projeto" class="form-projeto__linguagem" data-editor-linguagem>
+                        <option value="javascript" selected>JavaScript</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
                         <option value=""></option>
                         <option value=""></option>
                         <option value=""></option>
@@ -67,7 +109,7 @@
                     </select>
                     <input type="color" name="cor" id="cor-projeto" class="form-projeto__cor" data-input-color>
                 </fieldset>
-                <button name="salvar-projeto" class="form-projeto__botao-salvar">Salvar projeto</button>
+                <button name="salvar-projeto" class="form-projeto__botao-salvar" data-salvar-projeto>Salvar projeto</button>
                 
 
 
@@ -79,7 +121,9 @@
 
     <footer>
     </footer>
-
-    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/highlight.js"></script>
+    <script src="./js/salvarCodigo.js"></script>
 </body>
 </html>

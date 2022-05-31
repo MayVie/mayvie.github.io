@@ -1,0 +1,28 @@
+:root {
+
+    --cor-background-base: rgba(5, 29, 59, 1);
+    --cor-forte: rgba(80, 129, 251, 1);
+    --cor-media: rgba(123, 164, 252, 1);
+    --cor-fraca: rgba(150, 185, 253, 1);
+
+
+    --cor-forte-transparencia-alta: rgba(80, 129, 251, 0.08);
+    --cor-forte-transparencia-baixa: rgba(80, 129, 251, 0.16);
+    --cor-fonte-base: rgba(255, 255, 255, 1);
+    --cor-menu-mobile: rgba(45, 65, 91, 1);
+    
+
+    --font: 'Inter', sans-serif;
+}
+
+
+body {
+    padding: 1rem;
+
+    background-color: var(--cor-background-base);
+
+    font-family: var(--font);
+    color: var(--cor-fonte-base);
+}
+
+
