@@ -17,10 +17,10 @@
     border-radius: 16px;
 }
 .cabecalho__box-icone:hover {
-    background: var(--cor-forte-transparencia-alta);
+    background: var(--cor-forte-transparencia-baixa);
 }
 .cabecalho__box-icone:active {
-    background: var(--cor-forte-transparencia-baixa);
+    background: var(--cor-forte-transparencia-alta);
     
 }
 
@@ -67,7 +67,7 @@
     margin-right: 1rem;
     border-radius: 1rem;
     
-    background-color: var(--cor-forte-transparencia-baixa);
+    background-color: var(--cor-forte-transparencia-alta);
 }
 .cabecalho__menu-box-icon-ativo{
     background-color: var(--cor-forte);
